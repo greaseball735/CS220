@@ -1,0 +1,286 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "fms")
+(DATE "Mon Jan 27 16:05:34 2025")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2022.2")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE FSM_sequential_curr\[0\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE FSM_sequential_curr\[1\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE FSM_sequential_curr\[2\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I3 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I2 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I1 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I0 O (96.0:119.0:119.0) (96.0:119.0:119.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE FSM_sequential_curr\[3\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+      (IOPATH I3 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I2 O (122.0:152.0:152.0) (122.0:152.0:152.0))
+      (IOPATH I1 O (95.0:118.0:118.0) (95.0:118.0:118.0))
+      (IOPATH I0 O (121.0:150.0:150.0) (121.0:150.0:150.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE FSM_sequential_curr_reg\[0\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (662.0:821.0:821.0))
+      (IOPATH C Q (274.0:340.0:340.0) (274.0:340.0:340.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (RECREM (negedge CLR) (posedge C) (326.0:404.0:404.0) (-248.0:-248.0:-248.0))
+      (SETUPHOLD (posedge D) (posedge C) (-55.0:-45.0:-45.0) (241.0:241.0:241.0))
+      (SETUPHOLD (negedge D) (posedge C) (-55.0:-45.0:-45.0) (241.0:241.0:241.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE FSM_sequential_curr_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (662.0:821.0:821.0))
+      (IOPATH C Q (274.0:340.0:340.0) (274.0:340.0:340.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (RECREM (negedge CLR) (posedge C) (326.0:404.0:404.0) (-248.0:-248.0:-248.0))
+      (SETUPHOLD (posedge D) (posedge C) (-55.0:-45.0:-45.0) (241.0:241.0:241.0))
+      (SETUPHOLD (negedge D) (posedge C) (-55.0:-45.0:-45.0) (241.0:241.0:241.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE FSM_sequential_curr_reg\[2\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (616.0:764.0:764.0))
+      (IOPATH C Q (244.0:303.0:303.0) (244.0:303.0:303.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (RECREM (negedge CLR) (posedge C) (326.0:404.0:404.0) (-248.0:-248.0:-248.0))
+      (SETUPHOLD (posedge D) (posedge C) (-57.0:-46.0:-46.0) (225.0:225.0:225.0))
+      (SETUPHOLD (negedge D) (posedge C) (-57.0:-46.0:-46.0) (225.0:225.0:225.0))
+      (PERIOD (posedge C) (870.0:1000.0:1000.0))
+      (WIDTH (negedge C) (435.0:500.0:500.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE FSM_sequential_curr_reg\[3\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (616.0:764.0:764.0))
+      (IOPATH C Q (244.0:303.0:303.0) (244.0:303.0:303.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-9.0:-9.0:-9.0))
+      (RECREM (negedge CLR) (posedge C) (326.0:404.0:404.0) (-248.0:-248.0:-248.0))
+      (SETUPHOLD (posedge D) (posedge C) (-57.0:-46.0:-46.0) (225.0:225.0:225.0))
+      (SETUPHOLD (negedge D) (posedge C) (-57.0:-46.0:-46.0) (225.0:225.0:225.0))
+      (PERIOD (posedge C) (870.0:1000.0:1000.0))
+      (WIDTH (negedge C) (435.0:500.0:500.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+    )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE clk_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (91.0:101.0:101.0) (91.0:101.0:101.0))
+    )
+  )
+    (TIMINGCHECK
+      (PERIOD (posedge I) (2155.2:2155.2:2155.2))
+      (PERIOD (negedge I) (2155.2:2155.2:2155.2))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE clk_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (924.0:1058.5:1058.5) (924.0:1058.5:1058.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE in_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (822.3:955.8:955.8) (822.3:955.8:955.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE rst_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (817.1:950.5:950.5) (817.1:950.5:950.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE z_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2495.0:2651.5:2651.5) (2495.0:2651.5:2651.5))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE z_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT5")
+  (INSTANCE z_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I4 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE z_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (posedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+      (SETUPHOLD (negedge R) (posedge C) (445.0:552.0:552.0) (-41.0:-41.0:-41.0))
+    )
+)
+(CELL 
+    (CELLTYPE "fms")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT FSM_sequential_curr\[0\]_i_1/O FSM_sequential_curr_reg\[0\]/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT FSM_sequential_curr\[1\]_i_1/O FSM_sequential_curr_reg\[1\]/D (87.0:107.0:107.0) (87.0:107.0:107.0))
+      (INTERCONNECT FSM_sequential_curr\[2\]_i_1/O FSM_sequential_curr_reg\[2\]/D (52.0:64.0:64.0) (52.0:64.0:64.0))
+      (INTERCONNECT FSM_sequential_curr\[3\]_i_1/O FSM_sequential_curr_reg\[3\]/D (52.0:64.0:64.0) (52.0:64.0:64.0))
+      (INTERCONNECT FSM_sequential_curr_reg\[0\]/Q FSM_sequential_curr\[0\]_i_1/I1 (425.3:515.3:515.3) (425.3:515.3:515.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[0\]/Q FSM_sequential_curr\[1\]_i_1/I3 (428.3:520.3:520.3) (428.3:520.3:520.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[0\]/Q FSM_sequential_curr\[2\]_i_1/I3 (428.3:520.3:520.3) (428.3:520.3:520.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[0\]/Q z_i_2/I3 (249.3:297.3:297.3) (249.3:297.3:297.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[0\]/Q FSM_sequential_curr\[3\]_i_1/I4 (425.3:515.3:515.3) (425.3:515.3:515.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[1\]/Q z_i_2/I0 (391.3:474.3:474.3) (391.3:474.3:474.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[1\]/Q FSM_sequential_curr\[1\]_i_1/I1 (555.3:677.3:677.3) (555.3:677.3:677.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[1\]/Q FSM_sequential_curr\[2\]_i_1/I1 (555.3:677.3:677.3) (555.3:677.3:677.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[1\]/Q FSM_sequential_curr\[3\]_i_1/I2 (556.3:678.3:678.3) (556.3:678.3:678.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[1\]/Q FSM_sequential_curr\[0\]_i_1/I3 (556.3:678.3:678.3) (556.3:678.3:678.3))
+      (INTERCONNECT FSM_sequential_curr_reg\[2\]/Q FSM_sequential_curr\[0\]_i_1/I2 (714.0:871.0:871.0) (714.0:871.0:871.0))
+      (INTERCONNECT FSM_sequential_curr_reg\[2\]/Q FSM_sequential_curr\[1\]_i_1/I2 (715.0:873.0:873.0) (715.0:873.0:873.0))
+      (INTERCONNECT FSM_sequential_curr_reg\[2\]/Q FSM_sequential_curr\[2\]_i_1/I2 (715.0:873.0:873.0) (715.0:873.0:873.0))
+      (INTERCONNECT FSM_sequential_curr_reg\[2\]/Q z_i_2/I2 (829.0:1008.0:1008.0) (829.0:1008.0:1008.0))
+      (INTERCONNECT FSM_sequential_curr_reg\[2\]/Q FSM_sequential_curr\[3\]_i_1/I3 (714.0:871.0:871.0) (714.0:871.0:871.0))
+      (INTERCONNECT FSM_sequential_curr_reg\[3\]/Q FSM_sequential_curr\[0\]_i_1/I0 (808.7:976.7:976.7) (808.7:976.7:976.7))
+      (INTERCONNECT FSM_sequential_curr_reg\[3\]/Q FSM_sequential_curr\[3\]_i_1/I0 (808.7:976.7:976.7) (808.7:976.7:976.7))
+      (INTERCONNECT FSM_sequential_curr_reg\[3\]/Q FSM_sequential_curr\[1\]_i_1/I4 (807.7:974.7:974.7) (807.7:974.7:974.7))
+      (INTERCONNECT FSM_sequential_curr_reg\[3\]/Q FSM_sequential_curr\[2\]_i_1/I4 (807.7:974.7:974.7) (807.7:974.7:974.7))
+      (INTERCONNECT FSM_sequential_curr_reg\[3\]/Q z_i_2/I4 (871.4:1063.4:1063.4) (871.4:1063.4:1063.4))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O FSM_sequential_curr_reg\[0\]/C (1749.4:1951.0:1951.0) (1749.4:1951.0:1951.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O FSM_sequential_curr_reg\[1\]/C (1749.4:1951.0:1951.0) (1749.4:1951.0:1951.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O FSM_sequential_curr_reg\[2\]/C (1749.4:1951.0:1951.0) (1749.4:1951.0:1951.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O FSM_sequential_curr_reg\[3\]/C (1749.4:1951.0:1951.0) (1749.4:1951.0:1951.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O z_reg/C (1782.4:1991.0:1991.0) (1782.4:1991.0:1991.0))
+      (INTERCONNECT clk_IBUF_inst/O clk_IBUF_BUFG_inst/I (1972.0:2171.0:2171.0) (1972.0:2171.0:2171.0))
+      (INTERCONNECT in_IBUF_inst/O FSM_sequential_curr\[1\]_i_1/I0 (843.2:989.2:989.2) (843.2:989.2:989.2))
+      (INTERCONNECT in_IBUF_inst/O FSM_sequential_curr\[2\]_i_1/I0 (843.2:989.2:989.2) (843.2:989.2:989.2))
+      (INTERCONNECT in_IBUF_inst/O FSM_sequential_curr\[3\]_i_1/I1 (841.2:985.2:985.2) (841.2:985.2:985.2))
+      (INTERCONNECT in_IBUF_inst/O z_i_2/I1 (1050.2:1245.2:1245.2) (1050.2:1245.2:1245.2))
+      (INTERCONNECT in_IBUF_inst/O FSM_sequential_curr\[0\]_i_1/I4 (841.2:985.2:985.2) (841.2:985.2:985.2))
+      (INTERCONNECT rst_IBUF_inst/O FSM_sequential_curr_reg\[0\]/CLR (856.2:1001.2:1001.2) (856.2:1001.2:1001.2))
+      (INTERCONNECT rst_IBUF_inst/O FSM_sequential_curr_reg\[1\]/CLR (856.2:1001.2:1001.2) (856.2:1001.2:1001.2))
+      (INTERCONNECT rst_IBUF_inst/O FSM_sequential_curr_reg\[2\]/CLR (856.2:1001.2:1001.2) (856.2:1001.2:1001.2))
+      (INTERCONNECT rst_IBUF_inst/O FSM_sequential_curr_reg\[3\]/CLR (856.2:1001.2:1001.2) (856.2:1001.2:1001.2))
+      (INTERCONNECT rst_IBUF_inst/O z_i_1/I0 (922.2:1094.2:1094.2) (922.2:1094.2:1094.2))
+      (INTERCONNECT z_i_1/O z_reg/CE (642.8:781.8:781.8) (642.8:781.8:781.8))
+      (INTERCONNECT z_i_2/O z_reg/D (88.0:109.0:109.0) (88.0:109.0:109.0))
+      (INTERCONNECT z_reg/Q z_OBUF_inst/I (1443.9:1669.9:1669.9) (1443.9:1669.9:1669.9))
+      )
+    )
+)
+)

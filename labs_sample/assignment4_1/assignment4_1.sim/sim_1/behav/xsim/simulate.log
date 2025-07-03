@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Write to address 0: dout = 05
+Write to address 1: dout =  99
+Write to address 15: dout =  69
+Read from address 15: dout =  69
+Read from address 1: dout =  99

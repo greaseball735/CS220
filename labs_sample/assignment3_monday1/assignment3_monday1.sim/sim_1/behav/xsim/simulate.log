@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Time:                    0 | Gray Code: 000 | z: 1
+Time:                15000 | Gray Code: 001 | z: 0
+Time:                25000 | Gray Code: 011 | z: 0
+Time:                35000 | Gray Code: 010 | z: 0
+Time:                45000 | Gray Code: 110 | z: 0
+Time:                55000 | Gray Code: 111 | z: 0
+Time:                65000 | Gray Code: 101 | z: 0
+Time:                75000 | Gray Code: 100 | z: 0
+Time:                85000 | Gray Code: 000 | z: 1
+Time:                95000 | Gray Code: 001 | z: 0
+Time:               105000 | Gray Code: 011 | z: 0
+$finish called at time : 110 ns : File "/users/btech/rohitv23/assignment3_monday1/assignment3_monday1.srcs/sim_1/new/test.v" Line 26

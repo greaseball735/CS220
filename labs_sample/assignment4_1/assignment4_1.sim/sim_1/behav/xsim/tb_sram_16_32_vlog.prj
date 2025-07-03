@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../assignment4_1.srcs/sources_1/new/SRAM.v" \
+"../../../../assignment4_1.srcs/sources_1/new/SRAM_512_8.v" \
+"../../../../assignment4_1.srcs/sim_1/new/test_sram.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

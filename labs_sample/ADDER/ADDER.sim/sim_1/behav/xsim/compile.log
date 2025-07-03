@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/users/btech/rohitv23/ADDER/ADDER.srcs/sources_1/new/adder2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/users/btech/rohitv23/ADDER/ADDER.srcs/sources_1/new/lut_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_LUT_sum_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/users/btech/rohitv23/ADDER/ADDER.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NBitAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/users/btech/rohitv23/ADDER/ADDER.srcs/sim_1/new/test_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_add

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1737972326">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="fms_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="fms_routed.rqs"/>
+  <File Type="RCFI_FILE" Name="fms.rcfi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fms_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="fms_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fms_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fms_methodology_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fms_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fms_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="fms_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fms_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="fms_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="fms_placed.dcp"/>
+  <File Type="OPT-DCP" Name="fms_opt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fms_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fms_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fms.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="fms.sysdef"/>
+  <File Type="BITSTR-MMI" Name="fms.mmi"/>
+  <File Type="BITSTR-BMM" Name="fms_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="fms.nky"/>
+  <File Type="BITSTR-RBT" Name="fms.rbt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fms_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="fms_reports.tcl"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fms_timing_summary_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="fms.hwdef"/>
+  <File Type="RBD_FILE" Name="fms.rbd"/>
+  <File Type="BITSTR-MSK" Name="fms.msk"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fms_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="fms.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="fms_timing_summary_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="fms.vdi"/>
+  <File Type="OPT-DRC" Name="fms_drc_opted.rpt"/>
+  <File Type="NPI_FILE" Name="fms.npi"/>
+  <File Type="BG-BIN" Name="fms.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fms_timing_summary_routed.rpt"/>
+  <File Type="CFI_FILE" Name="fms.cfi"/>
+  <File Type="BG-DRC" Name="fms.drc"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fms_routed_error.dcp"/>
+  <File Type="RNPI_FILE" Name="fms.rnpi"/>
+  <File Type="BG-BGN" Name="fms.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fms_routed_bb.dcp"/>
+  <File Type="PDI-FILE" Name="fms.pdi"/>
+  <File Type="BG-BIT" Name="fms.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="fms_route_status.pb"/>
+  <File Type="PLACE-IO" Name="fms_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fms_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fms_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fms_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fms_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="fms_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fms_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="fms_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="fms_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="fms_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="fms_route_status.rpt"/>
+  <File Type="ROUTE-DCP" Name="fms_routed.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/fms.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fms"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

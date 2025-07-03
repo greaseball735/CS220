@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+help
+a =         42 b =         10, sum =         32 cout = 1
+a =         12 b =          9, sum =          3 cout = 1
+$finish called at time : 40 ns : File "/users/btech/rohitv23/assignment_1/assignment_1.srcs/sim_1/new/sub_test.v" Line 39

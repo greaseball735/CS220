@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/users/btech/rohitv23/assignment4_1/assignment4_1.sim/sim_1/impl/timing/xsim/tb_sram_16_32_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram_512_8
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/users/btech/rohitv23/assignment4_1/assignment4_1.srcs/sim_1/new/test_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sram_16_32

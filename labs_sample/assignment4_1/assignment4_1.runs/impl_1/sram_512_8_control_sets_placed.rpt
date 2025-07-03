@@ -1,0 +1,590 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Feb  3 16:16:35 2025
+| Host         : csews194 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_control_sets -verbose -file sram_512_8_control_sets_placed.rpt
+| Design       : sram_512_8
+| Device       : xc7z020
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   512 |
+|    Minimum number of control sets                        |   512 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     0 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   512 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   512 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     0 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            4096 |         2033 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |      Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------+------------------+------------------+----------------+--------------+
+|  wen_IBUF_BUFG | out[1][9][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][22][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][21][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][20][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[2][1][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][19][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[2][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][17][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[2][16][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[2][15][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[2][14][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[2][13][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[2][12][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[2][11][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[2][10][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[2][0][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][23][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[1][8][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[1][7][7]_i_1_n_0   |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[1][6][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[1][5][7]_i_1_n_0   |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[1][4][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[1][3][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[1][31][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[1][30][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[1][2][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[1][29][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[1][28][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[1][27][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[1][26][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[1][25][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[1][24][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[2][9][7]_i_1_n_0   |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[3][22][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][21][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][20][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[3][1][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[3][19][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[3][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][17][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[3][16][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[3][15][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[3][14][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][13][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][12][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][11][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[3][10][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[3][0][7]_i_1_n_0   |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[1][23][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[2][8][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][7][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[2][6][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][5][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][4][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][3][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[2][31][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[2][30][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[2][2][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[2][29][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[2][28][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[2][27][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[2][26][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[2][25][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[2][24][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[14][9][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[15][22][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][21][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[15][20][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[15][1][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[15][19][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[15][18][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][17][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[15][16][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[15][15][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[15][14][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][13][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[15][12][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[15][11][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[15][10][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[15][0][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[15][23][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][8][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][7][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[14][6][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[14][5][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[14][4][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[14][3][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][31][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][30][7]_i_1_n_0 |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[14][2][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][29][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][28][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][27][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][26][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][25][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[14][24][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[15][9][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[1][22][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[1][21][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[1][20][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[1][1][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[1][19][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[1][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[1][17][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[1][16][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[1][15][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[1][14][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[1][13][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[1][12][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[1][11][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[1][10][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[1][0][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[3][23][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[15][8][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][7][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][6][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[15][5][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][4][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][3][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[15][31][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[15][30][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[15][2][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][29][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[15][28][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[15][27][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][26][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[15][25][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[15][24][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[10][18][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[10][31][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[10][30][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[10][2][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[10][29][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[10][28][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[10][27][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[10][26][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[10][25][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][24][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][23][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[10][22][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][21][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[10][20][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][1][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[10][19][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[10][3][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[10][17][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][16][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[10][15][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][14][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[10][13][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][12][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[10][11][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][10][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[10][0][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[0][9][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[0][8][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[0][7][7]_i_1_n_0   |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[0][6][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[0][5][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[0][4][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[7][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][3][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][11][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[6][10][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[5][6][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][5][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[5][31][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][30][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[6][28][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][16][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[8][30][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[7][22][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[7][21][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][20][7]_i_1_n_0  |                  |                1 |              8 |         8.00 |
+|  wen_IBUF_BUFG | out[7][1][7]_i_1_n_0   |                  |                8 |              8 |         1.00 |
+|  wen_IBUF_BUFG | out[7][19][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[0][3][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][12][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[11][16][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[11][15][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[11][14][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[11][13][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[11][12][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[11][11][7]_i_1_n_0 |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[11][10][7]_i_1_n_0 |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[11][0][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[10][9][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[10][8][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[10][7][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[10][6][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[10][5][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[10][4][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][9][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][22][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][21][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][20][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][1][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][19][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][17][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[4][16][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[4][15][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][14][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][13][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][12][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[4][11][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][10][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[4][0][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][23][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[3][8][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][7][7]_i_1_n_0   |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[3][6][7]_i_1_n_0   |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[3][5][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][4][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][3][7]_i_1_n_0   |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[3][31][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[3][30][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[3][2][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[3][29][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[3][28][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[3][27][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[3][26][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[3][25][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[3][24][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[0][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[0][31][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[0][30][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[0][2][7]_i_1_n_0   |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[0][29][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[0][28][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[0][27][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[0][26][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[0][25][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[0][24][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[0][23][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[0][22][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[0][21][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[0][20][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[0][1][7]_i_1_n_0   |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[0][19][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][23][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[0][17][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[0][16][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[0][15][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[0][14][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[0][13][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[0][12][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[0][11][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[0][10][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[0][0][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][29][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][28][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[4][27][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[4][26][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][25][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][24][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[8][29][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[9][14][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[9][13][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[9][12][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[9][11][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[9][10][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[9][0][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[8][9][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[8][8][7]_i_1_n_0   |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[8][7][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][6][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][5][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][4][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][3][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[8][31][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][2][7]_i_1_n_0   |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[9][15][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[8][28][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[8][27][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[8][26][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[8][25][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[8][24][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[8][23][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][22][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[8][21][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[8][20][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[8][1][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[8][19][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][17][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[8][16][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[8][15][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[5][2][7]_i_1_n_0   |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[5][14][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][13][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[5][8][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][7][7]_i_1_n_0   |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[6][27][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[5][11][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][23][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[6][20][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][4][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][31][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[5][23][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[5][22][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[5][17][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][10][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[5][4][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][14][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][26][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[4][9][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[4][8][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][6][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][5][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][25][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[9][24][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[9][23][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[9][22][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[9][21][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[9][20][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[9][1][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][19][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][17][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[6][18][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][26][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][15][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[6][13][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][20][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][16][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][15][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][25][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[5][24][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][4][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][3][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][31][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][30][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[6][2][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][29][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][19][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][28][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[6][17][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[6][16][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][0][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][18][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[4][3][7]_i_1_n_0   |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[6][0][7]_i_1_n_0   |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[6][1][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][12][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[6][25][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][24][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][22][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][21][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[4][30][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[4][2][7]_i_1_n_0   |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[6][14][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][29][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[8][13][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[8][12][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[8][11][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[8][10][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[8][0][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[7][9][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][8][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[7][7][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[7][6][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][5][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][4][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[7][3][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[7][31][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[7][30][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[7][2][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[5][1][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][28][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[7][27][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[7][26][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][25][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[7][24][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[7][23][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][10][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[7][0][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[6][9][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][8][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][7][7]_i_1_n_0   |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[6][6][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[6][5][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[5][27][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[5][29][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[12][9][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[13][22][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[13][21][7]_i_1_n_0 |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[13][20][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[13][1][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[13][19][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[13][18][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[13][17][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[13][16][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][15][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[13][14][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][13][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[13][12][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[13][11][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[13][10][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][0][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[13][23][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[12][8][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[12][7][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[12][6][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[12][5][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[12][4][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[12][3][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[12][31][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[12][30][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[12][2][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[12][29][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[12][28][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[12][27][7]_i_1_n_0 |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[12][26][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[12][25][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[12][24][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[13][9][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[14][22][7]_i_1_n_0 |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[14][21][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[14][20][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][1][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][19][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][18][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][17][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[14][16][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[14][15][7]_i_1_n_0 |                  |                1 |              8 |         8.00 |
+|  wen_IBUF_BUFG | out[14][14][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][13][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[14][12][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][11][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[14][10][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[14][0][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[12][23][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][8][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][7][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[13][6][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[13][5][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[13][4][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][3][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[13][31][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][30][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[13][2][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[13][29][7]_i_1_n_0 |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[13][28][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][27][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[13][26][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[13][25][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[13][24][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[9][30][7]_i_1_n_0  |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[11][22][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[11][21][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[11][20][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[11][1][7]_i_1_n_0  |                  |                8 |              8 |         1.00 |
+|  wen_IBUF_BUFG | out[11][19][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[11][18][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[11][17][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[9][9][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][8][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[9][7][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[9][6][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[9][5][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][4][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][3][7]_i_1_n_0   |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[9][31][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[11][23][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[9][2][7]_i_1_n_0   |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[9][29][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[9][28][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[9][27][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[9][26][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[7][17][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[7][16][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[7][15][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[7][14][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][13][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[7][12][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[7][11][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][19][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[5][9][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[5][21][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[11][9][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[12][22][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[12][21][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[12][20][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[12][1][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[12][19][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[12][18][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[12][17][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[12][16][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[12][15][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[12][14][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[12][13][7]_i_1_n_0 |                  |                7 |              8 |         1.14 |
+|  wen_IBUF_BUFG | out[12][12][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[12][11][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[12][10][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[12][0][7]_i_1_n_0  |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[4][7][7]_i_1_n_0   |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[11][8][7]_i_1_n_0  |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[11][7][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[11][6][7]_i_1_n_0  |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[11][5][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[11][4][7]_i_1_n_0  |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[11][3][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[11][31][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[11][30][7]_i_1_n_0 |                  |                6 |              8 |         1.33 |
+|  wen_IBUF_BUFG | out[11][2][7]_i_1_n_0  |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[11][29][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
+|  wen_IBUF_BUFG | out[11][28][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[11][27][7]_i_1_n_0 |                  |                5 |              8 |         1.60 |
+|  wen_IBUF_BUFG | out[11][26][7]_i_1_n_0 |                  |                4 |              8 |         2.00 |
+|  wen_IBUF_BUFG | out[11][25][7]_i_1_n_0 |                  |                3 |              8 |         2.67 |
+|  wen_IBUF_BUFG | out[11][24][7]_i_1_n_0 |                  |                2 |              8 |         4.00 |
++----------------+------------------------+------------------+------------------+----------------+--------------+
+
+

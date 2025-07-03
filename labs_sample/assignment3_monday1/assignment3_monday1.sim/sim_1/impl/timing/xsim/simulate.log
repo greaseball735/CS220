@@ -1,0 +1,29 @@
+Time resolution is 1 ps
+Time:                    0 | Gray Code: xxx | z: x
+Time:                 5000 | Gray Code: xxx | z: 1
+Time:                 5000 | Gray Code: x0x | z: 1
+Time:                 6000 | Gray Code: x00 | z: 1
+Time:                 6000 | Gray Code: 000 | z: 1
+Time:               115000 | Gray Code: 000 | z: 0
+Time:               115000 | Gray Code: 001 | z: 0
+Time:               125000 | Gray Code: 011 | z: 0
+Time:               135000 | Gray Code: 010 | z: 0
+Time:               135000 | Gray Code: 000 | z: 0
+Time:               136000 | Gray Code: 010 | z: 0
+Time:               146000 | Gray Code: 110 | z: 0
+Time:               156000 | Gray Code: 100 | z: 0
+Time:               156000 | Gray Code: 101 | z: 0
+Time:               156000 | Gray Code: 111 | z: 0
+Time:               156000 | Gray Code: 011 | z: 0
+Time:               156000 | Gray Code: 111 | z: 0
+Time:               166000 | Gray Code: 110 | z: 0
+Time:               166000 | Gray Code: 100 | z: 0
+Time:               166000 | Gray Code: 101 | z: 0
+Time:               176000 | Gray Code: 001 | z: 0
+Time:               176000 | Gray Code: 101 | z: 0
+Time:               176000 | Gray Code: 100 | z: 0
+Time:               185000 | Gray Code: 100 | z: 1
+Time:               186000 | Gray Code: 000 | z: 1
+Time:               195000 | Gray Code: 000 | z: 0
+Time:               195000 | Gray Code: 001 | z: 0
+$finish called at time : 200 ns : File "/users/btech/rohitv23/assignment3_monday1/assignment3_monday1.srcs/sim_1/new/test.v" Line 26
